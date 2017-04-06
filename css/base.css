@@ -7,26 +7,45 @@ div {
   padding: 10px;
   margin: 10px;
   border: 10px dotted black;
+  border-radius: 10px;
   flex: 1;
 }
 
-.boite {
-  background-color: gold;
+.boite, .contact {
   padding: 10px;
+  box-shadow: 10px 8px 15px #223300;
+  background-image: linear-gradient(to right, #eeff99, gold);
+}
+
+.boite {
+  border-image: url("./../images/premiere_piece.png") 35% stretch;
+}
+
+.contact {
+  display: inline;
+  border-image: url("./../images/premiere_piece.png") 30% repeat;
 }
 
 img {
   flex: 2;
 }
 
+header div {
+    background-image: url("./../images/billet.jpg");
+}
+
+footer div {
+  background-image: url("https://image.freepik.com/vecteurs-libre/carte-grise-du-monde_1053-431.jpg")
+}
 header, main, footer {
   display: flex;
   justify-content: space-around;
 }
 
 header {
-  max-height: 400px;
+  max-height: 360px;
 }
+
 .conteneur {
   width: 100%;
   max-width: 860px;
@@ -35,10 +54,33 @@ header {
   background-color: lightgrey;
 }
 
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #222222;
+}
+
+a:active, a:hover {
+  font-size: 200%;
+  color: #444400;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  font-family: fantasy;
+  padding: 15px 5px ;
+}
+header h1 {
+  background-color: rgba(255, 250, 250, 0.7);
+  overflow: hidden;
+}
+
 ul {
   list-style-type: none;
   margin-left: -30px;
   font-weight: bold;
+  font-size: 15px;
 }
 
 li::before {
@@ -46,20 +88,19 @@ li::before {
 }
 
 li {
-  padding: 5px 0px 5px 15px;
+  padding: 10px 8px 5px 15px;
   font-weight: lighter;
+  font-size: 12px;
 }
 
-h1 {
-  flex: 1;
+figcaption {
+  text-align: center;
+  text-decoration:overline;
 }
 
 iframe {
   margin: auto;
   width: 50%;
+  height: 300px;
   margin-right: 30px;
-}
-
-.contact {
-  display: inline;
 }
