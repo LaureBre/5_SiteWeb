@@ -1,0 +1,65 @@
+* {
+  font-family: sans-serif;
+}
+
+div {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  border: 10px dotted black;
+  flex: 1;
+}
+
+.boite {
+  background-color: gold;
+  padding: 10px;
+}
+
+img {
+  flex: 2;
+}
+
+header, main, footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+header {
+  max-height: 400px;
+}
+.conteneur {
+  width: 100%;
+  max-width: 860px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: lightgrey;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: -30px;
+  font-weight: bold;
+}
+
+li::before {
+  content: '$ ';
+}
+
+li {
+  padding: 5px 0px 5px 15px;
+  font-weight: lighter;
+}
+
+h1 {
+  flex: 1;
+}
+
+iframe {
+  margin: auto;
+  width: 50%;
+  margin-right: 30px;
+}
+
+.contact {
+  display: inline;
+}
