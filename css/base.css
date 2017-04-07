@@ -4,6 +4,7 @@
 
 div {
   display: flex;
+  justify-content: space-between;
   padding: 10px;
   margin: 10px;
   border: 10px dotted black;
@@ -26,17 +27,21 @@ div {
   border-image: url("./../images/premiere_piece.png") 30% repeat;
 }
 
-img {
-  flex: 2;
-}
-
 header div {
     background-image: url("./../images/billet.jpg");
 }
 
-footer div {
-  background-image: url("https://image.freepik.com/vecteurs-libre/carte-grise-du-monde_1053-431.jpg")
+img {
+  height: 290px;
 }
+
+footer div {
+  background-image: url("https://image.freepik.com/vecteurs-libre/carte-grise-du-monde_1053-431.jpg");
+  background-position:center;
+  background-color: black;
+  background-blend-mode:exclusion;
+}
+
 header, main, footer {
   display: flex;
   justify-content: space-around;
@@ -62,17 +67,39 @@ a {
 
 a:active, a:hover {
   font-size: 200%;
-  color: #444400;
+  color: #882200;
+}
+
+h1:first-letter, h2:first-letter {                       /* Pour la première lettre de chaque paragraphes : */
+  font-weight: bold;
+  font-size: 32px;
+  color: #993300;                      /* De couleur bleu foncée    */
+}
+
+header i {
+  font-family: serif;
+  font-size: 30px;
 }
 
 h1 {
   text-align: center;
   font-size: 28px;
   font-family: fantasy;
-  padding: 15px 5px ;
+  font-weight: 100;
+  padding: 15px 5px;
+  margin-top: 0;
+  flex-grow: 2;
 }
+
+h2 {
+  margin-top: 0;
+  font-size: 120%;
+  font-family: serif;
+}
+
 header h1 {
-  background-color: rgba(255, 250, 250, 0.7);
+  background-image:
+    repeating-linear-gradient(rgba(230, 205, 160, 0.5), rgba(250, 235, 230, 0.5), rgba(230, 205, 160, 0.5), rgba(250, 255, 250, 0.2));
   overflow: hidden;
 }
 
@@ -91,6 +118,10 @@ li {
   padding: 10px 8px 5px 15px;
   font-weight: lighter;
   font-size: 12px;
+}
+
+figure {
+  margin: 0;
 }
 
 figcaption {
